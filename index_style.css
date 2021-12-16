@@ -1,0 +1,229 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#h-Position{
+    position: sticky;
+    top: 0px;
+    padding: 0px;
+    background-color: white;
+    box-shadow: 2px 0px 3px black;
+}
+.navigation-ul{
+    display: flex;
+    margin: 0px;
+}
+
+.nav-items{
+    list-style: none;
+}
+.nav-items a{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    margin: 1.5rem;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    line-height: 4rem;
+}
+.nav-items a:hover{
+    color:rgb(82, 82, 245);
+}
+
+/* media querie for navbar */
+@media (max-width: 688px) {
+    .navigation-ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-items{
+        border-left: 0.5 solid black;
+        border-bottom: 0.5px solid black;
+    }
+    #h-Position{
+        box-shadow: none;
+        position: static;
+    }
+}
+/* Section part */
+section{
+    background:transparent;
+}
+#main-para{
+    font-family: 'Orelega One', cursive;
+    font-size: 8.5vw;
+    margin: auto;
+    background-color: blanchedalmond;
+}
+#main-span{
+    display: block;
+    font-size: 1.5vw;
+    margin: 25px auto;
+    animation-name: Sahil;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes Sahil{
+    from{
+        margin-left: -830px;
+    }
+    to{
+        margin-left: 830px;
+    }
+}
+@media (max-width:1000px){
+    @keyframes Sahil{
+        from{
+            margin-left: -630px;
+        }
+        to{
+            margin-left: 630px;
+        }
+    }
+}
+
+.text-center{
+    text-align: center;
+}
+#main-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.choices{
+    height: 500px;
+    color: white;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    flex-direction: column;
+}
+#High-School{
+    background-color: #e8eaff;
+    color: black;
+}
+#High-School h2{
+    font-size: 30px;
+}
+#btn1{
+    background-color: #e8eaff;
+    margin-top: 7px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+#btn1 a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+} 
+
+
+
+/* Box 2 */
+#entrance-exam{
+    background-color: rgba(3,89,70,1);
+}
+.exam-list{
+    list-style: none;
+    margin-bottom: 10px;
+}
+#btn2{
+    background-color:#035946;
+    margin-top: 7px;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+#btn2 a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:white;
+} 
+
+#Civil-exam{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0c2b4a;
+    flex-wrap: wrap;
+}
+.Quote{
+    text-align: center;
+    font-size: 57px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+ .designing-bx3a{
+    width: 90%;
+    background-color: white;
+    height: 17px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+ 
+#btn3{
+    border:1px solid white;
+    border-radius: 7px;
+    background-color: #0c2b4a;
+}
+#btn3 a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+} 
+.designing-bx3b{
+    width: 90%;
+    background-color: white;
+    height: 17px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+/* Box 4 CSS */
+#temp{
+    display: flex;
+    background-color:#0c2b4a;
+    text-overflow:clip;
+}
+#temp h3{
+    text-align: center;
+    margin: 0px;
+    padding: 15px;
+    font-size: 45px;
+}
+#temp h4{
+    text-align: center;
+    margin: 0px;
+    font-size: 32px;
+    padding: 25px;
+}
+
+.formal-text{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+@media (max-width:800px) {
+    #main-span{
+        animation:none;
+    }
+    #temp{
+        display: none;
+    }
+    #main-links{
+        grid-template-columns: 1fr;
+    }
+    #main-span{
+        margin: 10px auto;
+        font-size: 20px;
+    }
+    #main-para{
+        display: none;
+    }
+}
